@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>intro</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div class="w-75 py-4 mx-auto">
+
+            <label for="productname">Product name :</label>
+            <input type="text" class="form-control my-2" id="productname">
+
+            <label for="productprice">Product price :</label>
+            <input type="text" class="form-control my-2" id="productprice">
+
+            <label for="productcatagory">Product catagory :</label>
+            <input type="text" class="form-control my-2" id="productcatagory">
+
+            <label for="productdsec">Product description :</label>
+            <textarea type="text" class="form-control my-2" id="productdsec"></textarea>
+
+            <button id="updateBtn" onclick="addProduct()" class="btn btn-info">add product</button>
+
+        </div>
+
+        
+        <div class="w-75 mx-auto py-3">
+
+            <div class="w-75 mx-auto">
+                <label for="searchinp">Search</label>
+                <input onkeyup="searchProducts(this.value)" type="text" class="form-control" id="searchinp">
+            </div>
+            
+            <table class="table my-5">
+                <thead>
+                    <th>index</th>
+                    <th>prodName</th>
+                    <th>prodPrice</th>
+                    <th>prodCatg</th>
+                    <th>prodDsec</th>
+                    <th>updata</th>
+                    <th>delete</th>
+                </thead>
+                <tbody id="tablerow">
+                    
+                </tbody>
+            </table>
+
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
